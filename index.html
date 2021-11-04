@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/icon" href="favicon.ico" />
+  <link rel="icon" type="image/icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luis Alberto | Porfolio WEB</title>
   <meta property="og:site_name" content="Portafolio WEB Luis" />
@@ -13,11 +13,45 @@
   <meta property="og:image" content="assets/img/og-image.jpg" />
   <meta property="og:description"
     content="Hola, Soy Luis Alberto, Bienvenid@s a mi porfolio WEB, aquí encontrarás información acerca de mi y mis proyectos; ¡Te invito a verla! :D" />
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
+  <nav>
+    <div class="flex__container container">
+      <div class="logo flex__2">
+        <img src="/assets/img/logoluis.png" alt="Logo porfolio Luis" />
+      </div>
+      <div id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul id="navbar" class="flex__4">
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="/acerca">Acera de mi</a>
+        </li>
+        <li>
+          <a href="/habilidades">Habilidades</a>
+        </li>
+        <li>
+          <a href="/educacion">Educación</a>
+        </li>
+        <li>
+          <a href="/trabajos">Trabajos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section>
+
+    </section>
+  </main>
 </body>
 
 </html>

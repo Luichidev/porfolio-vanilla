@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'lobster';
+  font-display: auto;
+  src: url('/assets/fonts/Lobster/Lobster-Regular.ttf');
+}
+
+html {
+  --mc: #1453b2;
+  --tc: #616261;
+  --sc: #2e2e2e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/****** - ESTILOS GENERALES - *****/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--mc);
+  border: solid 1px var(--mc);
+  box-shadow: 2px 2px 2px #000;
+  text-transform: uppercase;
+}
+
+.flex__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex__1 {
+  flex: 1;
+}
+.flex__2 {
+  flex: 2;
+}
+.flex__3 {
+  flex: 3;
+}
+.flex__4 {
+  flex: 4;
+}
+.flex__5 {
+  flex: 5;
+}
+
+.active {
+  background-color: var(--mc);
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-family: 'lobster', Arial, Helvetica, sans-serif;
+  text-shadow: 3px 3px 5px var(--mc);
+  font-size: 2.5rem;
+}
+
+.sub__title {
+  font-size: 1.1em;
+  text-shadow: 3px 3px 3px #000;
+}
+/****** - FIN ESTILOS GENERALES - *****/
+
+/****** - ESTILO DEL NAVBAR - *****/
+.show {
+  height: 250px;
+}
+
+.logo img {
+  width: 40%;
+}
+
+nav {
+  background-color: var(--sc);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+ul {
+  background-color: var(--sc);
+  height: 0;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  transition: height 0.3s linear;
+  width: 100%;
+}
+
+ul > li {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul > li:hover,
+.select {
+  background-color: var(--mc);
+  border-radius: 5px;
+}
+
+#burger {
+  width: 2rem;
+  height: 2rem;
+}
+
+#burger div {
+  width: 2rem;
+  height: 0.3rem;
+  background-color: #fff;
+  margin: 5px 0 0;
+}
+
+@media screen and (min-width: 400px) {
+  ul {
+    top: 60px;
+  }
+
+  .container {
+    width: 390px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  ul {
+    top: 95px;
+  }
+
+  .container {
+    width: 700px;
+  }
+
+  #burger div {
+    margin: 7px 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+
+  nav {
+    padding: 10px;
+    margin-top: 0;
+  }
+
+  span {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    height: auto;
+    position: static;
+    width: auto;
+  }
+
+  ul > li {
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  #burger {
+    display: none;
+  }
+}
+/****** - FIN ESTILO DEL NAVBAR - *****/
