@@ -1,0 +1,16 @@
+{
+  "name": "porfolio-vanilla",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "standard": "^16.0.4",
+    "vite": "^2.6.4"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
