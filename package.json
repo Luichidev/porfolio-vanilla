@@ -11,6 +11,12 @@
     "vite": "^2.6.4"
   },
   "eslintConfig": {
-    "extends": "standard"
+    "extends": ["standard", "prettier"]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "printWidth": 120
   }
 }
