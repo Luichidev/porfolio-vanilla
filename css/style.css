@@ -200,3 +200,38 @@ ul > li:hover,
   }
 }
 /****** - FIN ESTILO DEL NAVBAR - *****/
+
+/****** - ESTILO DEL FOOTER - *****/
+footer {
+  background-color: var(--sc);
+  color: #fff;
+  text-align: center;
+}
+
+.footer-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.social-icons {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.social-icons a {
+  margin: 5px;
+}
+
+.container h3 {
+  padding-bottom: 10px;
+}
+
+.footer-info {
+  margin-top: 10px;
+}
+
+.footer-info p {
+  margin: 0;
+  padding: 0;
+}
+/****** - FIN ESTILO DEL FOOTER - *****/
