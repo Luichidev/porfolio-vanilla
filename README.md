@@ -3,4 +3,4 @@
 Hola, Soy Luis Alberto, Bienvenid@s a mi porfolio WEB.
 Aquí encontrarás información acerca de mi y mis proyectos; ¡Te invito a verla!
 
-![Logo](https://luisalbertoarana.com/assets/img/ligthlogo.png)
+![Logo](https://luisalbertoarana.com/assets/img/lightlogo.png)
