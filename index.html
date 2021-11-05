@@ -15,6 +15,7 @@
     content="Hola, Soy Luis Alberto, Bienvenid@s a mi porfolio WEB, aquí encontrarás información acerca de mi y mis proyectos; ¡Te invito a verla! :D" />
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
+  <script defer src="js/scrollToTop.js"></script>
 </head>
 
 <body>
@@ -30,27 +31,40 @@
       </div>
       <ul id="navbar" class="flex__4">
         <li>
-          <a href="/">Inicio</a>
+          <a href="#inicio" class="tab">Inicio</a>
         </li>
         <li>
-          <a href="/acerca">Acera de mi</a>
+          <a href="#acerca" class="tab">Acera de mi</a>
         </li>
         <li>
-          <a href="/habilidades">Habilidades</a>
+          <a href="#habilidades" class="tab">Habilidades</a>
         </li>
         <li>
-          <a href="/educacion">Educación</a>
+          <a href="#educacion" class="tab">Educación</a>
         </li>
         <li>
-          <a href="/trabajos">Trabajos</a>
+          <a href="#trabajos" class="tab">Trabajos</a>
         </li>
       </ul>
     </div>
   </nav>
   <main>
-    <section>
-
+    <section id="inicio" class="page">
+      <h1>Inicio</h1>
     </section>
+    <section id="acerca" class="page">
+      <h1>Acerca de mi</h1>
+    </section>
+    <section id="habilidades" class="page">
+      <h1>Habilidades</h1>
+    </section>
+    <section id="educacion" class="page">
+      <h1>Educación</h1>
+    </section>
+    <section id="trabajos" class="page">
+      <h1>Trabajos</h1>
+    </section>
+    <button class="scrollToTop">🔼</button>
   </main>
   <footer>
     <div class="footer-container">
