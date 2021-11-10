@@ -5,6 +5,10 @@
 }
 
 /****** - ESTILOS GENERALES - *****/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   --mc: #1453b2;
@@ -13,15 +17,13 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
 section {
-  height: 100vh;
+  padding: 8px;
 }
 
 a {
@@ -36,12 +38,22 @@ button {
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+}
+
 .btn {
   color: #fff;
   background-color: var(--mc);
   border: solid 1px var(--mc);
-  box-shadow: 2px 2px 2px #000;
   text-transform: uppercase;
+  padding: 10px;
+  border-radius: 0.25rem;
+  outline: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-bottom: 16px;
 }
 
 .flex__container {
@@ -77,14 +89,16 @@ button {
 }
 
 .main__title {
+  color: var(--mc);
   font-family: 'lobster', Arial, Helvetica, sans-serif;
-  text-shadow: 3px 3px 5px var(--mc);
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .sub__title {
   font-size: 1.1em;
-  text-shadow: 3px 3px 3px #000;
+  padding-bottom: 16px;
+  font-weight: 500;
 }
 /****** - FIN ESTILOS GENERALES - *****/
 
@@ -201,20 +215,18 @@ ul > li > a:hover,
 /****** - FIN ESTILO DEL NAVBAR - *****/
 
 /****** - ESTILO DEL SCROLLTOTOP - *****/
-
 .scrollToTop {
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 2rem;
+  right: 1rem;
   padding: 0.5rem 0.25rem;
-  border: 1px solid black;
+  border: none;
   cursor: pointer;
-  font-weight: bold;
-  color: white;
-  background-color: black;
+  background-color: transparent;
   transform: translateY(50px);
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
+  font-size: 1.2rem;
 }
 
 .showScrollToTop {
@@ -224,6 +236,47 @@ ul > li > a:hover,
 
 /****** - FIN ESTILO DEL SCROLLTOTOP - *****/
 
+/****** - ESTILO DEL HOME - *****/
+.avatar__img {
+  border-radius: 50%;
+}
+
+.info {
+  text-align: center;
+}
+
+.avatar {
+  padding-top: 16px;
+}
+
+.icons__home a > svg {
+  width: 20px;
+  height: 20px;
+}
+/****** - FIN ESTILO DEL HOME - *****/
+
+/****** - ESTILO DE LA SECCION ACERCA - *****/
+.acerca__info p {
+  padding: 0 8px;
+}
+/****** - FIN ESTILO DE LA SECCION ACERCA - *****/
+.habilidades__container {
+  gap: 8px;
+}
+
+.habilidades__img {
+  text-align: center;
+}
+
+.habilidades__img svg {
+  width: 64px;
+  height: 64px;
+}
+
+.flex__2 svg {
+  width: 128px;
+  height: 64px;
+}
 /****** - ESTILO DEL FOOTER - *****/
 footer {
   background-color: var(--sc);
@@ -231,7 +284,7 @@ footer {
   text-align: center;
 }
 
-.footer-container {
+.footer__container {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 20px 0;
 }
@@ -245,15 +298,22 @@ footer {
   margin: 5px;
 }
 
-.container h3 {
-  padding-bottom: 10px;
+.social-icons a > svg {
+  width: 30px;
+  height: 30px;
 }
 
-.footer-info {
+.footer__container h3,
+p {
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.footer__info {
   margin-top: 10px;
 }
 
-.footer-info p {
+.footer__info p {
   margin: 0;
   padding: 0;
 }
